@@ -11,6 +11,7 @@ shujukeshihua homework
 _xixi_
 
 | da | lao |
+| new | bee |
 
 | 左对齐 | 右对齐 | 居中对齐 |
 | :-----| ----: | :----: |
