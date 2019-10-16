@@ -1,34 +1,12 @@
-# 第一次作业
-   2017新闻学（数据新闻报道方向）
-   李佳昊
-   201701133002
-   
-## 数据说明
+# 第三次作业
+- 所选数据集：NBA球员卢卡 东契奇的菜鸟赛季数据（from Kaggle）
+- 所用工具：镝数、数可视、Excel、Tableau
+- 体会：国内的平台注重平台版权————水印等；国外平台格式严谨，且不仅会开发线上平台，更多的是通过css或py文件呈现。同时，国外平台注册大多需要提供单位及职业信息。
+![dydata1](https://github.com/MeatbunBigking/Homework/blob/master/dydata1.jpg)
+![dydata2](https://github.com/MeatbunBigking/Homework/blob/master/dydata2.jpg)
+![shukeshi](https://github.com/MeatbunBigking/Homework/blob/master/shukeshi.jpg)
+![tableau](https://github.com/MeatbunBigking/Homework/blob/master/tableau.png)
 
-本次作业收集了自己一周以来（9.21-9.27）每天三餐主食的种类。
-
-本次作业的数据收集中发现的问题及感想主要是：
-1. 收集数据的过程比较繁琐，经常会忘记记录。
-2. 若不进行长期的数据收集，无法看出明显的收集意义。
-3. 多少会为了数据多样而影响自己的饮食选择。
-
-
-
-## 数据表部分
-
-![drawing1](https://github.com/MeatbunBigking/Homework/blob/master/shouhui1.jpg)
-![drawing2](https://github.com/MeatbunBigking/Homework/blob/master/shouhui2.jpg)
-
-| 三餐/日期 | 9.21 | 9.22 | 9.23 | 9.24 | 9.25 | 9.26 | 9.27 |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
-| 早餐 | 饼干 | 面条 | 饼干 | 没吃 | 面条 | 饼干 | 没吃 |
-| 午餐 | 米饭 | 米饭 | 米饭 | 面条 | 米饭 | 米饭 | 米饭 |
-| 晚餐 | 米饭 | 驴肉火烧 | 米饭 | 米饭 | 米饭 | 饺子 | 米饭 |
-
-- 日常生活中，我进出学校的时间会通过校门口面部识别系统被学校记录；
-- 我的位置信息和步数、运动状态会被手机及软件运营商记录；
-- 电子产品的使用时间会被电子产品生产商记录；
-- 我的消费记录会被手机支付软件、校园卡运维人员记录。
 
 # 第二次作业
 
@@ -140,10 +118,34 @@ D18=9.12%
 D19=11.15%
 D20=4.40%
 
-# 第三次作业
-- 所选数据集：NBA球员卢卡 东契奇的菜鸟赛季数据（from Kaggle）
-- 所用工具：镝数、数可视、Excel、Tableau
-- 体会：国内的平台注重平台版权————水印等；国外平台格式严谨，且不仅会开发线上平台，更多的是通过css或py文件呈现。同时，国外平台注册大多需要提供单位及职业信息。
-![dydata1](https://github.com/MeatbunBigking/Homework/blob/master/dydata1.jpg)
-![dydata2](https://github.com/MeatbunBigking/Homework/blob/master/dydata2.jpg)
-![shukeshi](https://github.com/MeatbunBigking/Homework/blob/master/shukeshi.jpg)
+# 第一次作业
+   2017新闻学（数据新闻报道方向）
+   李佳昊
+   201701133002
+   
+## 数据说明
+
+本次作业收集了自己一周以来（9.21-9.27）每天三餐主食的种类。
+
+本次作业的数据收集中发现的问题及感想主要是：
+1. 收集数据的过程比较繁琐，经常会忘记记录。
+2. 若不进行长期的数据收集，无法看出明显的收集意义。
+3. 多少会为了数据多样而影响自己的饮食选择。
+
+
+
+## 数据表部分
+
+![drawing1](https://github.com/MeatbunBigking/Homework/blob/master/shouhui1.jpg)
+![drawing2](https://github.com/MeatbunBigking/Homework/blob/master/shouhui2.jpg)
+
+| 三餐/日期 | 9.21 | 9.22 | 9.23 | 9.24 | 9.25 | 9.26 | 9.27 |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
+| 早餐 | 饼干 | 面条 | 饼干 | 没吃 | 面条 | 饼干 | 没吃 |
+| 午餐 | 米饭 | 米饭 | 米饭 | 面条 | 米饭 | 米饭 | 米饭 |
+| 晚餐 | 米饭 | 驴肉火烧 | 米饭 | 米饭 | 米饭 | 饺子 | 米饭 |
+
+- 日常生活中，我进出学校的时间会通过校门口面部识别系统被学校记录；
+- 我的位置信息和步数、运动状态会被手机及软件运营商记录；
+- 电子产品的使用时间会被电子产品生产商记录；
+- 我的消费记录会被手机支付软件、校园卡运维人员记录。
