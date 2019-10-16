@@ -16,7 +16,9 @@
 
 ## 数据表部分
 
-![手绘](https://github.com/MeatbunBigking/Homework/blob/master/shouhui1.jpg)
+![drawing1](https://github.com/MeatbunBigking/Homework/blob/master/shouhui1.jpg)
+![drawing2](https://github.com/MeatbunBigking/Homework/blob/master/shouhui2.jpg)
+
 | 三餐/日期 | 9.21 | 9.22 | 9.23 | 9.24 | 9.25 | 9.26 | 9.27 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | 
 | 早餐 | 饼干 | 面条 | 饼干 | 没吃 | 面条 | 饼干 | 没吃 |
