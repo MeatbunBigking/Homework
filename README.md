@@ -145,3 +145,4 @@ D20=4.40%
 - 所用工具：镝数、数可视、Excel、Tableau
 - 体会：国内的平台注重平台版权————水印等；国外平台格式严谨，且不仅会开发线上平台，更多的是通过css或py文件呈现。同时，国外平台注册大多需要提供单位及职业信息。
 ![dydata1](https://github.com/MeatbunBigking/Homework/blob/master/dydata1.jpg)
+![dydata2](https://github.com/MeatbunBigking/Homework/blob/master/dydata2.jpg)
