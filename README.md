@@ -284,9 +284,10 @@ position_identity
 + geom_point()
 Error in `Encoding<-`(`*tmp*`, value = "UTF-8") : 需要字符矢量参数
 >
-青少年犯罪的图：2008-2017年18岁以下刑事案件嫌疑人统计
+- 青少年犯罪的图：2008-2017年18岁以下刑事案件嫌疑人统计
 ![图1](https://github.com/MeatbunBigking/Homework/blob/master/crime%20suspect%20under%2018.png)
-麦当劳的图：汉堡单品营养参考（闫求识帮我写了一些）
+	
+- 麦当劳的图：汉堡单品营养参考（闫求识帮我写了一些）
 ![图2](https://github.com/MeatbunBigking/Homework/blob/master/rstudiomcd.png)
 
 ＃ 第五次作业
