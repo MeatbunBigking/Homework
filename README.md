@@ -284,6 +284,7 @@ position_identity
 + geom_point()
 Error in `Encoding<-`(`*tmp*`, value = "UTF-8") : 需要字符矢量参数
 >
+![图1](https://github.com/MeatbunBigking/Homework/blob/master/crime%20suspect%20under%2018.png)
 
 
 ＃ 第五次作业
