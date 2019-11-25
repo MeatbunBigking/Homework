@@ -1,3 +1,291 @@
+# 第六次作业
+- 代码：
+>install.packages("gcookbook")
+WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+试开URL’https://cran.rstudio.com/bin/windows/contrib/3.6/gcookbook_2.0.zip'
+Content type 'application/zip' length 4012802 bytes (3.8 MB)
+downloaded 3.8 MB
+
+package ‘gcookbook’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Lenovo\AppData\Local\Temp\RtmpmIpk9v\downloaded_packages
+> library(ggplot2)
+错误: package or namespace load failed for ‘ggplot2’ in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):
+ 不存在叫‘colorspace’这个名字的程辑包
+> install.packages("ggplot2")
+WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+试开URL’https://cran.rstudio.com/bin/windows/contrib/3.6/ggplot2_3.2.1.zip'
+Content type 'application/zip' length 3976166 bytes (3.8 MB)
+downloaded 3.8 MB
+
+package ‘ggplot2’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Lenovo\AppData\Local\Temp\RtmpmIpk9v\downloaded_packages
+> library(ggplot2)
+错误: package or namespace load failed for ‘ggplot2’ in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):
+ 不存在叫‘colorspace’这个名字的程辑包
+> install.packages("colorspace")
+WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+试开URL’https://cran.rstudio.com/bin/windows/contrib/3.6/colorspace_1.4-1.zip'
+Content type 'application/zip' length 2550276 bytes (2.4 MB)
+downloaded 2.4 MB
+
+package ‘colorspace’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Lenovo\AppData\Local\Temp\RtmpmIpk9v\downloaded_packages
+> library(ggplot2)
+> setwd("~/")
+> data <- read.csv("mennu.csv")
+Error in file(file, "rt") : 无法打开链结
+此外: Warning message:
+In file(file, "rt") : 无法打开文件'mennu.csv': No such file or directory
+> data <- read.csv("mennu.csv")
+> View(data)
+> library(gcookbook)
+> ggplot(pg_mean, aes(x = Item, y = weight)) +
++ geom_col()
+Error in FUN(X[[i]], ...) : 找不到对象'Item'
+> install.packages("tidyverse")
+WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+
+  There is a binary version available but the source version is later:
+
+installing the source package ��tidyverse��
+
+试开URL’https://cran.rstudio.com/src/contrib/tidyverse_1.3.0.tar.gz'
+Content type 'application/x-gzip' length 712837 bytes (696 KB)
+downloaded 696 KB
+
+* installing *source* package 'tidyverse' ...
+** 成功将'tidyverse'程序包解包并MD5和检查
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package 'tidyverse'
+    finding HTML links ... 好了
+    tidyverse-package                       html  
+    tidyverse_conflicts                     html  
+    tidyverse_deps                          html  
+    tidyverse_logo                          html  
+    tidyverse_packages                      html  
+    tidyverse_sitrep                        html  
+    tidyverse_update                        html  
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tidyverse)
+Making 'packages.html' ... 好了
+
+The downloaded source packages are in
+	‘C:\Users\Lenovo\AppData\Local\Temp\RtmpmIpk9v\downloaded_packages’
+> data <- read.csv("mennu.csv")
+> data
+> library(tidyverse)
+Registered S3 methods overwritten by 'dbplyr':
+  method         from
+  print.tbl_lazy     
+  print.tbl_sql      
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+�� tibble  2.1.3     �� dplyr   0.8.3
+�� tidyr   1.0.0     �� stringr 1.4.0
+�� readr   1.3.1     �� forcats 0.4.0
+�� purrr   0.3.3     
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+> data <- data %>%
++   pivot_wider(-Item, names_to = "type", values_to = "value")
+Error in pivot_wider(., -Item, names_to = "type", values_to = "value") : 
+  参数没有用(names_to = "type", values_to = "value")
+> data <- data %>%
++   pivot_longerr(-Item, names_to = "type", values_to = "value")
+Error in pivot_longerr(., -Item, names_to = "type", values_to = "value") : 
+  没有"pivot_longerr"这个函数
+> data <- data %>%
++   pivot_longer(-Item, names_to = "type", values_to = "value")
+错误: No common type for `Serving.Size` <factor<feac0>> and `Total.Fat` <integer>.
+> data <- data %>%
++   pivot_longer(-(1:2), names_to = "type", values_to = "value")
+> data
+> ggplot(data) + 
++   geom_col(aes(value, type))
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type))
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_grid(
++     ~ Item
++   )
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_grid(~ Item, cols = 1`)
++ ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_grid(~ Item, cols = 1)
++ ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_grid(~ Item, cols = 1)
+错误: Incomplete expression: ggplot(data) + 
+  geom_col(aes(type, value, fill = type)) + 
+  coord_flip() + 
+  facet_grid(~ Item, cols = 1)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_wrap(~ Item)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_wrap(~ Item, ncol = 1)
+> ```{r, fig.height=10}
+错误: 不能用零长度变数名
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_wrap(~ Item, ncol = 1)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_wrap(~ Item, ncol = 1)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   facet_wrap(~ Item)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer("Set3")
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer("Set3") + 
++   facet_wrap(~ Item)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer("Set1") + 
++   facet_wrap(~ Item)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer("Set2") + 
++   facet_wrap(~ Item)
+Error in gsub("\\", "\\\\", s, fixed = TRUE) : 
+  input string 1 is invalid in this locale
+Error in gsub("\\", "\\\\", s, fixed = TRUE) : 
+  input string 1 is invalid in this locale
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer("Pastel2") + 
++   facet_wrap(~ Item)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer(palette = "Set1") + 
++   facet_wrap(~ Item)
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer(palette = "Set1") + 
++   facet_wrap(~ Item) + 
++   theme_classic()
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer(palette = "Set2") + 
++   facet_wrap(~ Item) + 
++   theme_classic()
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer(palette = "Set3") + 
++   facet_wrap(~ Item) + 
++   theme_classic()
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer(palette = "Accent") + 
++   facet_wrap(~ Item) + 
++   theme_classic()
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer(palette = "Dark2") + 
++   facet_wrap(~ Item) + 
++   theme_classic()
+> ggplot(data) + 
++   geom_col(aes(type, value, fill = type)) + 
++   coord_flip() + 
++   scale_fill_brewer(palette = "Set1") + 
++   facet_wrap(~ Item) + 
++   theme_classic()
+> data <- read.csv("mennu.csv")
+> data <- read.csv( mennu2.csv )
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  找不到对象'mennu2.csv'
+> setwd("~/")
+> data <- read.csv("mennu2.csv")
+> library(ggplot2)
+> View(data)
+> setwd("~/")
+> data <- read.csv("mennu2.csv")
+> View(data)
+> library(gcookbook)
+> ggplot(mennu2, aes(x = Year, y = Amount, colour = supp)) +
++ geom_line()
+Error in ggplot(mennu2, aes(x = Year, y = Amount, colour = supp)) : 
+  找不到对象'mennu2'
+> ggplot(data, aes(x = Year, y = Amount, colour = supp)) +
++ geom_line()
+Error in FUN(X[[i]], ...) : 找不到对象'supp'
+> ggplot(data, aes(x = Year, y = Amount)) +
++ geom_line()
+> +geom_point()
+错误: Cannot use `+.gg()` with a single argument. Did you accidentally put + on a new line?
+> ggplot(data, aes(x = Year, y = Amount)) +
++ geom_line()
+> ggplot(data, aes(x = Year, y = Amount)) +
++ geom_point()
+> geom_point()
+geom_point: na.rm = FALSE
+stat_identity: na.rm = FALSE
+position_identity 
+> ggplot(data, aes(x = Year, y = Amount)) +
++ geom_line()
+> geom_line()+
++ geom_point()
+错误: Cannot add ggproto objects together. Did you forget to add this object to a ggplot object?
+> ggplot(data, aes(x = Year, y = Amount)) +
++ geom_line()
+> ggplot(data, aes(x = Year, y = Amount)) +
++ geom_line()+
++ geom_point()
+Error in `Encoding<-`(`*tmp*`, value = "UTF-8") : 需要字符矢量参数
+>
+
+
 ＃ 第五次作业
 - 题目：《青少年犯罪的背后————不可忽视的心理建设》
 - 10月份发生的“大连女童之死”案引发了国内对于未成年人保护和未成年人犯罪行为的又一次大规模讨论。遇害的女童年仅十岁，而凶手更是只有13岁。除了谴责凶手的残忍和思考法律制度问题等常规角度以外，作为以未成年人为事件中心的案件，我认为从凶手的角度出发，可以研究未成年人刑事案件与心理医疗条件的关系。
